@@ -2,18 +2,7 @@ version: '3'
 services:
   todo-fe:
     build:
-        context: .
-        dockerfile: Dockerfile.dev
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "5080:5080"
-    volumes:
-        - /app/node_modules
-        - .:/app
-  tests:
-    build:
-        context: .
-        dockerfile: Dockerfile.dev
-    volumes:
-        - /app/node_modules
-        - .:/app
-    command: ["npm", "run", "test"]

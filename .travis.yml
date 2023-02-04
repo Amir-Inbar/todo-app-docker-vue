@@ -13,7 +13,7 @@ deploy:
     provider: elasticbeanstalk
     region: "us-east-1"
     app: "todo-app-docker-vue"
-    env: "Todoappdockervue-env"
+    env: "Todoappdockervue-env-1"
     bucket_name: "elasticbeanstalk-us-east-1-258435333577"
     bucket_path: "todo-app-docker-vue"
     on:

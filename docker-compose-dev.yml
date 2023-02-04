@@ -1,6 +1,7 @@
 version: '3'
 services:
   todo-fe:
+    stdin_open: true
     build:
         context: .
         dockerfile: Dockerfile.dev
